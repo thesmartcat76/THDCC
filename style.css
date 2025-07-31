@@ -1,0 +1,29 @@
+html {
+	background-color: beige;
+}
+h1 {
+	text-align: center;
+}
+#logo {
+	position: sticky;
+      left: 700px;
+	  
+}
+#H9 {
+	text-align: center;
+}
+#DIV {
+	display: inline-block;
+	width: 200;
+}
+# 1! {
+	display: inline-block;
+	width: 1000px;
+}
+#to_nav {
+color: #000000;
+background-color: #f629a3;
+}#to_debit {
+color: #000000;
+background-color: #f629a3;
+}
