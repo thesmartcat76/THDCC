@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>thdcc details</title>
+  </head>
+  <body>
+    <script>
+      alert("Details!");
+    </script>
+    <style>
+      html {
+        background-color: beige;
+      }
+      #titl {
+        font-size: 50px;
+        font-weight: 50px;
+      }
+      #to_nav {
+        color: #000000;
+        background-color: #f629a3;
+        border: #000000 solid;
+      }
+    </style>
+    <h1 id="titl">Details</h1>
+    <ol>
+      <li>You have to bring a mac, windows, linux, chromebook, or tablet.</li>
+      <li>You have to join the google-classroom.</li>
+      <li>It is all free.</li>
+    </ol>
+    <ul>
+      <li>Ages 10-15.</li>
+    </ul>
+    <button id="to_nav" type="button">Navagation page</button>
+    <script>
+      document.getElementById("to_nav").addEventListener("click", function () {
+        // Redirect to another page
+        window.location.href = "THDCC_nav.html";
+      });
+    </script>
+  </body>
+</html>
