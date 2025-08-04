@@ -13,17 +13,20 @@ h1 {
 	text-align: center;
 }
 #DIV {
-	display: inline-block;
 	width: 200;
+	display: inline-block;
 }
 # 1! {
-	display: inline-block;
 	width: 1000px;
+	display: inline-block;
 }
 #to_nav {
 color: #000000;
 background-color: #f629a3;
-}#to_debit {
+border: #000000 solid;
+}
+#to_debit {
 color: #000000;
 background-color: #f629a3;
+border: #000000 solid;
 }
