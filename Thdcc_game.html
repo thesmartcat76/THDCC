@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>thdcc game</title>
+</head>
+<body>
+<style>
+html {
+background-color: beige;
+}
+#titl {
+font-size: 50px;
+font-weight: 50px;
+}
+#to_nav {
+color: #000000;
+background-color: #f629a3;
+border: #000000 solid;
+}
+p {
+display: inline-block;
+}
+textarea {
+width: 300px;
+display: inline-block;
+background-color: beige;
+}
+</style>
+<h1>E-libs about you</h1>
+<p>Hello my name is</p><textarea rows="1">noun</textarea><p>and I am</p><textarea rows="1">number</textarea><p>years old.</p>
+<br>
+<button id="to_nav" type="button">Navagation page</button>
+<script>
+document.getElementById('to_nav').addEventListener('click', function() {
+      // Redirect to another page
+      window.location.href = 'THDCC_nav.html';
+    });
+</script>
+</body>
+</html>
