@@ -6,8 +6,9 @@ h1 {
 }
 #logo {
 	position: sticky;
-      left: 700px;
-	  
+	left: 700px;
+	width: 300px;
+	hight: 400px;
 }
 #H9 {
 	text-align: center;
@@ -21,13 +22,14 @@ h1 {
 	display: inline-block;
 }
 #to_nav {
-color: #000000;
-background-color: #f629a3;
-border: #000000 solid;
+	color: #000000;
+	background-color: #f629a3;
+	border: #000000 solid;
 }
 #to_debit {
-color: #000000;
-background-color: #f629a3;
-border: #000000 solid;
+	color: #000000;
+	background-color: #f629a3;
+	border: #000000 solid;
 }
+
 
