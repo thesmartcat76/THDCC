@@ -7,6 +7,8 @@ h1 {
 #logo {
 	position: sticky;
 	left: 700px;
+	width: 600px;
+	hight: 700px
 }
 #H9 {
 	text-align: center;
@@ -29,6 +31,7 @@ h1 {
 	background-color: #f629a3;
 	border: #000000 solid;
 }
+
 
 
 
