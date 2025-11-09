@@ -34,6 +34,7 @@ border: #000000 solid;
 <h1 id="titl">Redirection</h1><br><br><br><br><br><br><br><br><br>
 <button id="to_home" type="button">Home</button><br><br>
 <button id="to_detas" type="button">Details</button><br><br>
+<button id="to_lean" type="button">Courses</button>
 <style>
 #get_sss {
 color: #000000;
@@ -42,15 +43,18 @@ backround-color: #f629a3;
 </style>
 <button id="to_game" type="button">Game</button>
 <script>
-document.getElementById('to_home').addEventListener('click', function() {
-      window.location.href = 'index.html';
-    });
-document.getElementById('to_detas').addEventListener('click', function() {
-window.location.href = 'details.html';
-});
-document.getElementById('to_game').addEventListener('click', function() {
-window.location.href = 'Thdcc_game.html';
-});
+  document.getElementById('to_home').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+  document.getElementById('to_detas').addEventListener('click', function() {
+    window.location.href = 'details.html';
+  });
+  document.getElementById('to_game').addEventListener('click', function() {
+    window.location.href = 'Thdcc_game.html';
+  });
+  document.getElementById('to_lean').addEventListener('click", function() {
+    window.location.href = "course_home.html"
+  });
 </script>
 </body>
 </html>
