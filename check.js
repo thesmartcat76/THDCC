@@ -1,4 +1,4 @@
-const form = getElementByID("form")
+const form = getElementById("form")
 const pass = "THDCC"
 form.addEventListener('submit', function (event) {
     event.preventDefault();
