@@ -8,7 +8,7 @@ h1 {
 	position: sticky;
 	left: 700px;
 	width: 600px;
-	hight: 700px
+	height: 700px;
 }
 #H9 {
 	text-align: center;
@@ -17,7 +17,7 @@ h1 {
 	width: 200;
 	display: inline-block;
 }
-# 1! {
+#ld {
 	width: 1000px;
 	display: inline-block;
 }
@@ -31,7 +31,11 @@ h1 {
 	background-color: #f629a3;
 	border: #000000 solid;
 }
-
+input[type="text"] {
+	min-width: 200px;
+	min-height: 25px;
+	field-sizing: content;
+}
 
 
 
