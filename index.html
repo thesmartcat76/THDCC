@@ -28,8 +28,8 @@
 	<li>Bring a mac, windows, linux, or chromebook to every session.</li>
 	</ol>
 	<button id="to_debit" type="button">See more details</button>
-</div><br>
-<button id="to_nav" type="button">Navagation page</button>
+    <button id="to_nav" type="button">Navagation page</button>
+</div>
 <script>
 document.getElementById('to_nav').addEventListener('click', function() {
       // Redirect to another page
@@ -56,6 +56,12 @@ document.getElementById('join_form').addEventListener('submit', function(e) {
         phone: phone,
         message: message
     };
+    
+    // Save to localStorage
+    var newMembers = JSON.parse(localStorage.getItem('newMembers')) || [];
+    newMembers.push(contacts);
+    localStorage.setItem('newMembers', JSON.stringify(newMembers));
+    
     // Send email to variable
     var clubEmail = "twistedhotdawgcoddingclub@gmail.com";
     var subject = "Join Request from " + name;

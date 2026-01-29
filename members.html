@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+        <title>Members - The Twisted Hot Dawg Codding Club</title>
+    </head>
+    <body>
+        <script src="members.js"></script>
+        <div id="admin_login" style="background-color: #f0f0f0; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
+            <p id="admin_status" style="margin: 0 0 10px 0;">Admin Mode: OFF</p>
+            <input type="password" id="admin_password" placeholder="Enter admin password" style="padding: 5px;"/>
+            <button id="admin_btn" style="padding: 5px 10px; cursor: pointer;">Login as Admin</button>
+            <button id="logout_btn" style="padding: 5px 10px; cursor: pointer; display: none;">Logout</button>
+        </div>
+        <div id="members_section">
+            <h1>Members of The Twisted Hot Dawg Codding Club</h1>
+            <ul>
+                <li>Alice Johnson - President</li>
+                <li>Bob Smith - Vice President</li>
+                <li>Charlie Brown - Treasurer</li>
+                <li>Diana Prince - Secretary</li>
+                <li>Eva Green - Lead Developer</li>
+                <li>Frank Castle - Marketing Head</li>
+            </ul>
+            <button id="to_nav" type="button">Navigation page</button>
+        </div>
+        <script>
+            document.getElementById('to_nav').addEventListener('click', function() {
+                // Redirect to another page
+                window.location.href = 'THDCC_nav.html';
+            });
+        </script>
