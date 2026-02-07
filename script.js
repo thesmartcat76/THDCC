@@ -19,7 +19,7 @@ document.getElementById('join_form').addEventListener('submit', function(e) {
         message: message
     };
     // Send email to variable
-    var clubEmail = "thdcc@example.com";
+    var clubEmail = "twistedhotdawgcodingclub@gmail.com";
     var subject = "Join Request from " + name;
     var body = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message;
     window.location.href = "mailto:" + clubEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
