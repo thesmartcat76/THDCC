@@ -36,6 +36,8 @@ input[type="text"] {
 	min-height: 25px;
 	field-sizing: content;
 }
-
+button {
+	border-radius:42.3px;
+}
 
 
