@@ -1,0 +1,11 @@
+button {
+    background-color: #f629a3;
+    border-radius: 42px;
+    border: #000000 solid;
+}
+html {
+    background-color: beige;
+}
+header, main, footer {
+    background-color: azure;
+}
