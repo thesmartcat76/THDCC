@@ -7,5 +7,14 @@ html {
     background-color: beige;
 }
 header, main, footer {
-    background-color: azure;
+    background-color: beige;
+}
+#pagesNav {
+    display: inline-block;
+}
+#logo {
+    display: inline-block;
+}
+#title {
+    display: inline-block;
 }
