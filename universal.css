@@ -14,8 +14,8 @@ header, main, footer {
     background-color: beige;
 }
 #pagesNav {
-    color: #f629a3;
     height: auto;
+    position: sticky;
 }
 #logo {
     display: inline-block;
