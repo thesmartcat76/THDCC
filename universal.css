@@ -3,6 +3,10 @@ button {
     border-radius: 42px;
     border: #000000 solid;
 }
+a {
+    color: #000000;
+    text-decoration: none;
+}
 html {
     background-color: beige;
 }
@@ -10,11 +14,31 @@ header, main, footer {
     background-color: beige;
 }
 #pagesNav {
-    display: inline-block;
+    color: #f629a3;
+    height: auto;
 }
 #logo {
     display: inline-block;
+    width: 64px;
+    height: 64px;
 }
-#title {
+.title {
     display: inline-block;
+    font-size: 64px;
+    margin-top: 0px;
+    border: 1px solid #000000;
+    height: 64px;
+}
+.pages {
+    font-size: 28px;
+    list-style-type: none;
+    display: flex;
+    gap: calc(25vw - 28px);
+    padding: 10px;
+    height: 20px;
+}
+.title-container {
+    /*align-self: center;*/
+    display: flex;
+    justify-content: center;
 }
