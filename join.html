@@ -37,7 +37,15 @@
             </article>
         </main>
         <footer>
-            <p>&copy; 2024 Twisted Hot Dawg Coding Club. All rights reserved.</p>
+            <p>&copy; 2026 Twisted Hot Dawg Coding Club. All rights reserved.</p>
         </footer>
+        <script src="join.js"></script>
+        <script>
+            document.getElementById('joinForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Thank you for your submission! We will review your application and contact you soon.');
+                this.reset();
+            });
+            </script>
     </body>
 </html>
