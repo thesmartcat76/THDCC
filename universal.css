@@ -62,6 +62,6 @@ form, textarea {
 }
 input, textarea {
     background-color: #f629a3;
-    border-radius: 42px;
+    border-radius: 15px;
     border: #000000 solid;
 }
