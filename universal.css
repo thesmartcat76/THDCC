@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
 button {
     background-color: #f629a3;
     border-radius: 42px;
     border: #000000 solid;
+    font-family: 'Google Sans';
 }
 a {
     color: #000000;
     text-decoration: none;
+    font-family: 'Google Sans';
 }
 html {
     background-color: beige;
@@ -26,8 +30,12 @@ header, main, footer {
     display: inline-block;
     font-size: 64px;
     margin-top: 0px;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
     height: 64px;
+    font-family: 'Strait';
+}
+p:not(footer p) {
+    font-family: 'Strait';
 }
 .pages {
     font-size: 28px;
@@ -41,4 +49,19 @@ header, main, footer {
     /*align-self: center;*/
     display: flex;
     justify-content: center;
+}
+h2 {
+    font-family: 'Strait';
+}
+a:hover {
+    color: #f629a3;
+    text-decoration: underline;
+}
+form, textarea {
+    font-family: 'Google Sans';
+}
+input, textarea {
+    background-color: #f629a3;
+    border-radius: 42px;
+    border: #000000 solid;
 }

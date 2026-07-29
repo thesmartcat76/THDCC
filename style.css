@@ -1,7 +1,9 @@
 #contents {
     float: right;
     height: auto;
-    border: 10px solid #000000;
     padding: 10px;
     margin: 10px;
+}
+ul, ol, li {
+    font-family: 'Strait';
 }
