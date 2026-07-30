@@ -10,9 +10,9 @@ if (joinForm) {
 
         const clubEmail = 'twistedhotdawgcodingclub@gmail.com';
         const subject = 'Join Request from ' + name;
-        const body = 'Name: ' + name + '\nReason: ' + reason + '\nOther: ' + other;
+        const body = 'Name: ' + name + '\nReason: ' + reason + '\nNo-Code Position: ' + other;
         const mailtoLink = 'mailto:' + clubEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
-        window.location.href = mailtoLink;
+        window.open(mailtoLink, '_blank');
     });
 }
