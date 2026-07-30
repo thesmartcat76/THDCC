@@ -1,13 +1,18 @@
-const joinForm = document.getElementById('join_form');
-joinForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var name = document.getElementById('name').value;
-    var reason = document.getElementById('reason').value;
-    var other = document.getElementById('other').checked;
+const joinForm = document.getElementById('joinForm');
 
-    // Send email to variable
-    var clubEmail = "twistedhotdawgcodingclub@gmail.com";
-    var subject = "Join Request from " + name;
-    var body = "Name: " + name + "\nReason: " + reason + "\nOther: " + other;
-    window.location.href = "mailto:" + clubEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-});
+if (joinForm) {
+    joinForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const reason = document.getElementById('reason').value.trim();
+        const other = document.getElementById('other').checked;
+
+        const clubEmail = 'twistedhotdawgcodingclub@gmail.com';
+        const subject = 'Join Request from ' + name;
+        const body = 'Name: ' + name + '\nReason: ' + reason + '\nOther: ' + other;
+        const mailtoLink = 'mailto:' + clubEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+        window.location.href = mailtoLink;
+    });
+}
