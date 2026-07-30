@@ -25,6 +25,7 @@ header, main, footer {
     display: inline-block;
     width: 64px;
     height: 64px;
+    margin: 5px;
 }
 .title {
     display: inline-block;
