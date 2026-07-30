@@ -1,43 +1,9 @@
-html {
-	background-color: beige;
+#contents {
+    float: right;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
 }
-h1 {
-	text-align: center;
+ul, ol, li {
+    font-family: 'Strait';
 }
-#logo {
-	position: sticky;
-	left: 700px;
-	width: 600px;
-	height: 700px;
-}
-#H9 {
-	text-align: center;
-}
-#DIV {
-	width: 200;
-	display: inline-block;
-}
-#ld {
-	width: 1000px;
-	display: inline-block;
-}
-#to_nav {
-	color: #000000;
-	background-color: #f629a3;
-	border: #000000 solid;
-}
-#to_debit {
-	color: #000000;
-	background-color: #f629a3;
-	border: #000000 solid;
-}
-input[type="text"] {
-	min-width: 200px;
-	min-height: 25px;
-	field-sizing: content;
-}
-button {
-	border-radius:42.3px;
-}
-
-

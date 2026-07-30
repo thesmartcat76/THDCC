@@ -1,76 +1,46 @@
-<!DOCTYPE html>
-<html id="HTML!">
-	  <link href="style.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-
-<div id="ld">
-<h1> The Twisted Hot Dawg Codding Club!</h1>
-<h2 id="H9"><b>From scratch to python to html, css ,js to c++!</b></h2>
-<img src="hot-logo!.jpg" id="logo">
-</div>
-<div id="DIV">
-<p>Where creativity turns into code! Join The Twisted Hot Dawg Codding Club!</p>
-<button id="join_us">Join us</button>
-<div id="contact_form" style="display:none;">
-<form id="join_form">
-<label for="name">Name:</label><input type="text" id="name" required><br>
-<label for="email">Email:</label><input type="email" id="email" required><br>
-<label for="phone">Phone:</label><input type="tel" id="phone"><br>
-<label for="message">Message:</label><textarea id="message"></textarea><br>
-<button type="submit">Submit</button>
-<button type="button" id="cancel">Cancel</button>
-</form>
-</div>
-<h2 style="font-family:Georgia">Details:</h2>
-<!-- Details ...-->
-<ol>
-	<li>Please bring a computer that can use the internet.</li>
-	<li>It is our recomendation to join the google and github classroom.</li>
-	</ol>
-	<button id="to_debit" type="button">See more details</button>
-    <button id="to_nav" type="button">Navagation page</button>
-</div>
-<script>
-document.getElementById('to_nav').addEventListener('click', function() {
-      // Redirect to another page
-      window.location.href = 'THDCC_nav.html';
-    });
-document.getElementById('to_debit').addEventListener('click', function(){
-window.location.href = 'details.html';
-});
-document.getElementById('join_us').addEventListener('click', function() {
-    document.getElementById('contact_form').style.display = 'block';
-});
-document.getElementById('cancel').addEventListener('click', function() {
-    document.getElementById('contact_form').style.display = 'none';
-});
-document.getElementById('join_form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var phone = document.getElementById('phone').value;
-    var message = document.getElementById('message').value;
-    var contacts = {
-        name: name,
-        email: email,
-        phone: phone,
-        message: message
-    };
-    
-    // Save to localStorage
-    var newMembers = JSON.parse(localStorage.getItem('newMembers')) || [];
-    newMembers.push(contacts);
-    localStorage.setItem('newMembers', JSON.stringify(newMembers));
-    
-    // Send email to variable
-    var clubEmail = "twistedhotdawgcoddingclub@gmail.com";
-    var subject = "Join Request from " + name;
-    var body = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message;
-    window.location.href = "mailto:" + clubEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    // Hide form
-    document.getElementById('contact_form').style.display = 'none';
-});
-</script>
-</body>
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>THDCC | Home</title>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="universal.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <nav id="pagesNav">
+            <div class="title-container">
+<h1 class="title">The Twisted Hot</h1> 
+<img id='logo' src="https://github.com/thesmartcat76/THDCC/blob/main-2.0/hot-logo!.jpg?raw=truehot-logo.jpg" alt="Logo"/>
+<h1 class="title">Dawg Coding Club</h1>
+                </div>
+                <ul class="pages">
+                    <li><a href='index.html'">Home</a></li>
+                    <li><a href='about.html'">About us</a></li>
+                    <li><a href='projects.html'">Projects</a></li>
+                    <li><a href='join.html'">Join us</a></li>
+                </ul>
+            </nav>  
+        </header>
+        <main>
+            <aside id="contents">
+                <ol>
+                    <li><a href="#intro">Introduction</a></li>
+                    <!---fill in ltr-->
+                </ol>
+            </aside>
+            <article id="intro">
+                <h2>Welcome to the Twisted Hot Dawg Coding Club (THDCC)</h2>
+                <p>We are an oganization of aspiring website, game, and appilcation developers.<br> 
+                    We prioritze communty and proper education of compuer science and programming.<br>
+                    At the THDCC we let students learn at their own pace in a involving method of teaching.<br>
+                </p>
+                <progress></progress>
+            </article>
+        </main>
+        <footer>
+<p>&copy; 2026 Twisted Hot Dawg Coding Club. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>

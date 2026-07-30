@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+button {
+    background-color: #f629a3;
+    border-radius: 42px;
+    border: #000000 solid;
+    font-family: 'Google Sans';
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Google Sans';
+}
+html {
+    background-color: beige;
+}
+header, main, footer {
+    background-color: beige;
+}
+#pagesNav {
+    height: auto;
+    position: sticky;
+}
+#logo {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+.title {
+    display: inline-block;
+    font-size: 64px;
+    margin-top: 0px;
+    /*border: 1px solid #000000;*/
+    height: 64px;
+    font-family: 'Strait';
+}
+p:not(footer p) {
+    font-family: 'Strait';
+}
+.pages {
+    font-size: 28px;
+    list-style-type: none;
+    display: flex;
+    gap: calc(25vw - 28px);
+    padding: 10px;
+    height: 20px;
+}
+.title-container {
+    /*align-self: center;*/
+    display: flex;
+    justify-content: center;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Strait';
+}
+a:hover {
+    color: #f629a3;
+    text-decoration: underline;
+}
+form, textarea {
+    font-family: 'Google Sans';
+}
+input, textarea {
+    background-color: #f629a3;
+    border-radius: 15px;
+    border: #000000 solid;
+}
