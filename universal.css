@@ -12,10 +12,10 @@ a {
     font-family: 'Google Sans';
 }
 html {
-    background-color: beige;
+    background-color: #f5f5dc;
 }
 header, main, footer {
-    background-color: beige;
+    background-color: #f5f5dc;
 }
 #pagesNav {
     height: auto;
